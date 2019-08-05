@@ -1,202 +1,79 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<br />
+<br />
+<br />
+@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>*@
 
 @*<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>*@
+        <h1>Centric Consulting Recognizes</h1>
+        <p class="lead">An Application Designed to Identify the Hard Work Provided by Centric Employees</p>
+        <p><a href="https://centricconsulting.com/" class="btn btn-primary btn-lg">View Company Website &raquo;</a></p>
+    </div>*@
 
-<div class="row">
-    <html>
-    <head>
-        <style>
-            table {
-                border-collapse: collapse;
-                border: 1px solid black;
-            }
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-            tr:nth-child(even) {
-                background-color: #f2f2f2
-            }
-        </style>
-    </head>
-    <body>
-        <div class="col-md-2">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Content/Images/Slide1.jpg" alt="CentricSlide1">
+            </div>
 
-            <h3>Leaderboard</h3>
+            <div class="item">
+                <img src="~/Content/Images/Slide2.jpg" alt="CentricSlide2">
+            </div>
 
-            <h6>Month  Year   All Time</h6>
-
-            <table>
-
-
-                <tr>
-                    <td>1. Example</td>
-                </tr>
-                <tr>
-                    <td>2. Example</td>
-                </tr>
-                <tr>
-                    <td>3. Example</td>
-                </tr>
-                <tr>
-                    <td>4. Example</td>
-                </tr>
-                <tr>
-                    <td>5. Example</td>
-                </tr>
-                <tr>
-                    <td>6. Example</td>
-                </tr>
-                <tr>
-                    <td>7. Example</td>
-                </tr>
-                <tr>
-                    <td>8. Example</td>
-                </tr>
-                <tr>
-                    <td>9. Example</td>
-                </tr>
-                <tr>
-                    <td>10. Example</td>
-                </tr>
-            </table>
-
+            <div class="item">
+                <img src="~/Content/Images/Slide3.jpg" alt="CentricSlide3">
+            </div>
         </div>
 
-    </body>
-</html>
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            border: 1px solid black;
-           
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2
-        }
-    </style>
-</head>
-<body>
-
-    <div class="col-md-8">
-        <center>
-            <h2>Send Recognition to...</h2>
-
-            <input id="TxtInputName" type="text" width="300" />
-        </center>
-        <left>
-            <p>Send Personal Message<input id="TxtPersonalMessage" type="text" width="300" /></p>
-        </left>
-        <center>
-            <h4>Type of Recognition (See our @Html.ActionLink("Core Values", "CoreValues", "Home"))</h4>
-            <p><a class="btn btn-default">Centric Value 1</a><a class="btn btn-default">Centric Value 2</a></p>
-            <p><a class="btn btn-default">Centric Value 3</a><a class="btn btn-default">Centric Value 4</a></p>
-
-
-            <h2>Newsfeed goes here</h2>
-            <table>
-
-                <tr>
-                    <td>1. Example</td>
-                </tr>
-                <tr>
-                    <td>2. Example</td>
-                </tr>
-                <tr>
-                    <td>3. Example</td>
-                </tr>
-                <tr>
-                    <td>4. Example</td>
-                </tr>
-                <tr>
-                    <td>5. Example</td>
-                </tr>
-                <tr>
-                    <td>6. Example</td>
-                </tr>
-                <tr>
-                    <td>7. Example</td>
-                </tr>
-                <tr>
-                    <td>8. Example</td>
-                </tr>
-                <tr>
-                    <td>9. Example</td>
-                </tr>
-                <tr>
-                    <td>10. Example</td>
-                </tr>
-                
-            </table>
-        </center>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-</body>
-</html>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>How to Get Started?</h2>
+            <p>
+                Hello Centric Employees! Let's start complimenting the hard work done by your co-workers! To get started, please register at the top right corner. Once this is done, you will be redirected to a profile creation page. Once this is done, it's time to start recognizing all the hard work done! For any questions that need to be answered, please visit the "FAQ" page.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>What is the Purpose?</h2>
+            <p>The purpose of this application is to allow employees to recognize and be recognized based on Centric's Core Values.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Who Created This App?</h2>
+            <p>
+                This application was created in Athens, Ohio at Ohio University. This was developed by Austin Doyle, Hunter McCollough, Xin Ding, Jeff Reimann, and Adam Pierce as a team for MIS 4200. This class partners with Centric to provide an opportunity to gain experience working with technology and the project management technique Scrum.
+            </p>
+            <br />
+        </div>
+        <a class="twitter-timeline" href="https://twitter.com/hashtag/CentricRecognition" data-widget-id="939652430341472256">#CentricRecognition Tweets</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
 
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            border: 1px solid black;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2
-        }
-    </style>
-</head>
-<body>
-
-    <div class="col-md-2">
-
-        <h3>History</h3>
-
-        <h6>Sent        Recieved</h6>
-
-        <table>
-
-
-            <tr>
-                <td>1. Example</td>
-            </tr>
-            <tr>
-                <td>2. Example</td>
-            </tr>
-            <tr>
-                <td>3. Example</td>
-            </tr>
-            <tr>
-                <td>4. Example</td>
-            </tr>
-            <tr>
-                <td>5. Example</td>
-            </tr>
-            <tr>
-                <td>6. Example</td>
-            </tr>
-            <tr>
-                <td>7. Example</td>
-            </tr>
-            <tr>
-                <td>8. Example</td>
-            </tr>
-            <tr>
-                <td>9. Example</td>
-            </tr>
-            <tr>
-                <td>10. Example</td>
-            </tr>
-        </table>
-
+        <div class="col-md-6">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCentricConsultingNational%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
     </div>
-
-</body>
-</html>
+    <br />
+    <br />
